@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|c:\\users\\ivard\\source\\repos\\tp2_ejercicios_csharp\\tp2_ejercicios_csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|solutionrelative:tp2_ejercicios_csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|c:\\users\\ivard\\source\\repos\\tp2_ejercicios_csharp\\tp2_ejercicios_csharp\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|solutionrelative:tp2_ejercicios_csharp\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|c:\\users\\ivard\\source\\repos\\tp2_ejercicios_csharp\\tp2_ejercicios_csharp\\ejercicio09.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8DB59B-F2D2-D43E-7E46-1D0C19F0A833}|TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp.csproj|solutionrelative:tp2_ejercicios_csharp\\ejercicio09.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ejercicio10.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Ejercicio10.cs",
+              "RelativeDocumentMoniker": "TP2_Ejercicios_CSharp\\Ejercicio10.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Ejercicio10.cs",
+              "RelativeToolTip": "TP2_Ejercicios_CSharp\\Ejercicio10.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T21:44:18.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio09.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Ejercicio09.cs",
+              "RelativeDocumentMoniker": "TP2_Ejercicios_CSharp\\Ejercicio09.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Ejercicio09.cs",
+              "RelativeToolTip": "TP2_Ejercicios_CSharp\\Ejercicio09.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T21:43:29.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Program.cs",
+              "RelativeDocumentMoniker": "TP2_Ejercicios_CSharp\\Program.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\TP2_Ejercicios_CSharp\\TP2_Ejercicios_CSharp\\Program.cs",
+              "RelativeToolTip": "TP2_Ejercicios_CSharp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T20:28:24.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
