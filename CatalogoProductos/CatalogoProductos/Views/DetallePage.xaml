@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="CatalogoProductos.Views.DetallePage"
+Title="Detalle">
+
+    <ScrollView>
+        <StackLayout Spacing="0">
+            <!-- Imagen del producto -->
+            <Image x:Name="imgProducto"
+                Aspect="AspectFill"
+                HeightRequest="{OnIdiom Phone=300, Tablet=400, Desktop=500}"/>
+            <!-- Información del producto -->
+            <StackLayout Padding="20" Spacing="15">
+
+                <!-- Nombre y precio -->
+
+                <Label x:Name="lblNombre" Style="{StaticResource H1}"/>
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lblPrecio"
+                    Grid.Column="0"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource Exito}"/>
+
+                    <StackLayout Grid.Column="1"
+                    Orientation="Horizontal"
+                    Spacing="10"
+                    VerticalOptions="Center">
+                        <Label Text=" " FontSize="20"/>
+                        <Label x:Name="lblCalificacion"
+                            FontSize="18"
+                            FontAttributes="Bold"/>
+
+                        <Label Text="(4.5)" Style="{StaticResource Caption}"/>
+                    </StackLayout>
+                </Grid>
+
+                <!-- Categoría y stock -->
+
+                <FlexLayout Direction="Row" Wrap="Wrap"
+                JustifyContent="Start">
+                    <Border Padding="10,5"
+                    Margin="0,0,10,0"
+                    StrokeShape="RoundRectangle 8"
+                    Background="{StaticResource Primario}">
+
+                        <Label x:Name="lblCategoria"
+                        TextColor="White"
+                        FontSize="12"
+                        FontAttributes="Bold"/>
+
+                    </Border>
+                    <Border Padding="10,5"
+                        StrokeShape="RoundRectangle 8"
+                        Background="{StaticResource Exito}">
+
+                        <Label x:Name="lblStock"
+                            TextColor="White"
+                            FontSize="12"
+                            FontAttributes="Bold"/>
+
+                    </Border>
+                </FlexLayout>
+                <!-- Descripción -->
+
+                <Label Text="Descripción" Style="{StaticResource H2}"
+                    Margin="0,20,0,10"/>
+                <Label x:Name="lblDescripcion" Style="{StaticResource Body}"/>
+                <!-- Características -->
+
+                <Label Text="Características" Style="{StaticResource H2}"
+                    Margin="0,20,0,10"/>
+                <Border Style="{StaticResource Card}">
+                    <StackLayout Spacing="10">
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="✓" TextColor="{StaticResource Exito}" FontSize="20"/>
+                            <Label Grid.Column="1" Text="Garantía de 1 año"
+                                Style="{StaticResource Body}"/>
+                        </Grid>
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="✓" TextColor="{StaticResource Exito}" FontSize="20"/>
+                            <Label Grid.Column="1" Text="Envío gratis"
+                                Style="{StaticResource Body}"/>
+                        </Grid>
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="✓" TextColor="{StaticResource Exito}" FontSize="20"/>
+                            <Label Grid.Column="1" Text="Devolución en 30 días" Style="{StaticResource Body}"/>
+                        </Grid>
+                    </StackLayout>
+                </Border>
+
+                <!-- Botones de acción -->
+
+                <Grid ColumnSpacing="10" Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                        Text="Agregar al Carrito"
+                        Style="{StaticResource BtnPrimario}"
+                        Clicked="OnAgregarCarritoClicked"/>
+
+                    <Button Grid.Column="1"
+                        Text="Comprar Ahora"
+                        Style="{StaticResource BtnSecundario}"
+                        Clicked="OnComprarClicked"/>
+
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|c:\\users\\ivard\\source\\repos\\perfilpersonalapp\\perfilpersonalapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|solutionrelative:perfilpersonalapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|c:\\users\\ivard\\source\\repos\\perfilpersonalapp\\perfilpersonalapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|solutionrelative:perfilpersonalapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|c:\\users\\ivard\\source\\repos\\perfilpersonalapp\\perfilpersonalapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|solutionrelative:perfilpersonalapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|c:\\users\\ivard\\source\\repos\\perfilpersonalapp\\perfilpersonalapp\\views\\profileviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|solutionrelative:perfilpersonalapp\\views\\profileviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|c:\\users\\ivard\\source\\repos\\perfilpersonalapp\\perfilpersonalapp\\perfilpersonalapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7148B84-8EF1-484C-AD21-9AB89B4749F8}|PerfilPersonalApp\\PerfilPersonalApp.csproj|solutionrelative:perfilpersonalapp\\perfilpersonalapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "PerfilPersonalApp\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "PerfilPersonalApp\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T23:18:00.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "PerfilPersonalApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\AppShell.xaml",
+              "RelativeToolTip": "PerfilPersonalApp\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-23T23:15:16.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\App.xaml",
+              "RelativeDocumentMoniker": "PerfilPersonalApp\\App.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\App.xaml",
+              "RelativeToolTip": "PerfilPersonalApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-23T23:15:14.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileViewPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\Views\\ProfileViewPage.xaml.cs",
+              "RelativeDocumentMoniker": "PerfilPersonalApp\\Views\\ProfileViewPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\Views\\ProfileViewPage.xaml.cs",
+              "RelativeToolTip": "PerfilPersonalApp\\Views\\ProfileViewPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T23:14:15.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerfilPersonalApp.csproj",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\PerfilPersonalApp.csproj",
+              "RelativeDocumentMoniker": "PerfilPersonalApp\\PerfilPersonalApp.csproj",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\PerfilPersonalApp\\PerfilPersonalApp\\PerfilPersonalApp.csproj",
+              "RelativeToolTip": "PerfilPersonalApp\\PerfilPersonalApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T22:15:11.242Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

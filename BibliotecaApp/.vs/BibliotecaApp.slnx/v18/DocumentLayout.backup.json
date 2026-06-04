@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\detallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\detallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\librospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\librospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\viewmodels\\detalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\viewmodels\\detalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\services\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\services\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\perfilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\perfilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\favoritospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\favoritospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\viewmodels\\librosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\viewmodels\\librosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "BibliotecaApp\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:55:30.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml",
+              "RelativeToolTip": "BibliotecaApp\\AppShell.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-25T23:54:08.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LibroService.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Services\\LibroService.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Services\\LibroService.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Services\\LibroService.cs",
+              "RelativeToolTip": "BibliotecaApp\\Services\\LibroService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:47:26.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DetalleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
+              "RelativeToolTip": "BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:33:08.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Models\\Libro.cs",
+              "RelativeToolTip": "BibliotecaApp\\Models\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:31:44.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibrosPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\LibrosPage.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\LibrosPage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\LibrosPage.xaml",
+              "RelativeToolTip": "BibliotecaApp\\Views\\LibrosPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-25T23:58:47.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetallePage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\DetallePage.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\DetallePage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\DetallePage.xaml",
+              "RelativeToolTip": "BibliotecaApp\\Views\\DetallePage.xaml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T00:01:38.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\HomeViewModel.cs",
+              "RelativeToolTip": "BibliotecaApp\\ViewModels\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:32:40.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PerfilPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\PerfilPage.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\PerfilPage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\PerfilPage.xaml",
+              "RelativeToolTip": "BibliotecaApp\\Views\\PerfilPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T00:05:06.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FavoritosPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\FavoritosPage.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\FavoritosPage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\FavoritosPage.xaml",
+              "RelativeToolTip": "BibliotecaApp\\Views\\FavoritosPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T00:04:45.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml.cs",
+              "RelativeToolTip": "BibliotecaApp\\Views\\HomePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:34:47.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml",
+              "RelativeDocumentMoniker": "BibliotecaApp\\Views\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml",
+              "RelativeToolTip": "BibliotecaApp\\Views\\HomePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-25T23:34:32.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LibrosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
+              "RelativeToolTip": "BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:32:57.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PerfilViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\PerfilViewModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\PerfilViewModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\PerfilViewModel.cs",
+              "RelativeToolTip": "BibliotecaApp\\ViewModels\\PerfilViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:33:21.28Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

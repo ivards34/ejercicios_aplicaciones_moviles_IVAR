@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="CatalogoProductos.Views.HomePage"
+Title="Inicio">
+
+    <ScrollView>
+        <StackLayout Padding="{OnIdiom Phone=15, Tablet=20, Desktop=30}"
+            Spacing="20">
+            <!-- Header -->
+            <Grid ColumnSpacing="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0">
+                    <Label Text="Hola, Usuario" Style="{StaticResource H2}"/>
+                    <Label Text="¿Qué estás buscando hoy?"
+                        Style="{StaticResource Caption}"/>
+                </StackLayout>
+                <ImageButton Grid.Column="1"
+                    Source="perfil.png"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    Clicked="OnPerfilClicked"/>
+
+            </Grid>
+
+            <!-- Barra de búsqueda -->
+
+            <Border Padding="0" StrokeShape="RoundRectangle 12"
+                Background="{AppThemeBinding Light={StaticResource SuperficieClaro}, Dark={StaticResource SuperficieOscuro}}">
+                <SearchBar x:Name="searchBar"
+
+                    Placeholder="Buscar productos..."
+                    SearchButtonPressed="OnSearchButtonPressed"/>
+
+            </Border>
+
+            <!-- Categorías -->
+
+            <Label Text="Categorías" Style="{StaticResource H2}"/>
+            <CollectionView x:Name="collectionViewCategorias"
+                ItemsLayout="HorizontalList"
+                HeightRequest="100"
+                SelectionMode="Single"
+                SelectionChanged="OnCategoriaSelected">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Padding="20"
+                            Margin="5"
+                            StrokeShape="RoundRectangle 16"
+                            WidthRequest="120">
+                            <Border.Background>
+                                <Binding Path="Color"/>
+                            </Border.Background>
+                            <StackLayout Spacing="5">
+                                <Label Text="{Binding Icono}"
+                                    FontSize="32"
+                                    HorizontalOptions="Center"/>
+                                <Label Text="{Binding Nombre}"
+                                    FontSize="14"
+                                    FontAttributes="Bold"
+                                    TextColor="White"
+                                    HorizontalOptions="Center"/>
+
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Productos destacados -->
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Productos Destacados" Style="{StaticResource H2}"/>
+                <Label Grid.Column="1"
+                    Text="Ver todos"
+                    Style="{StaticResource Caption}"
+                    TextColor="{StaticResource Primario}"
+                    VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnVerTodosClicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+            <CollectionView x:Name="collectionViewProductos"
+                SelectionMode="Single"
+                SelectionChanged="OnProductoSelected">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+
+                        Span="{OnIdiom Phone=2, Tablet=3, Desktop=4}"
+
+                        VerticalItemSpacing="15"
+                        HorizontalItemSpacing="15"/>
+
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Style="{StaticResource Card}" Padding="10">
+                            <Grid RowSpacing="8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <!-- Imagen -->
+
+                                <Image Source="{Binding Imagen}"
+                                Aspect="AspectFill"
+                                Grid.Row="0"/>
+                                <!-- Nombre -->
+
+                                <Label Text="{Binding Nombre}"
+
+                                Grid.Row="1"
+                                Style="{StaticResource Body}"
+                                FontAttributes="Bold"
+                                LineBreakMode="TailTruncation"
+                                MaxLines="2"/>
+                                <!-- Precio -->
+
+                                <Label Text="{Binding Precio, StringFormat='${0:F2}'}"
+
+                                Grid.Row="2"
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="{StaticResource Exito}"/>
+                                <!-- Calificación -->
+                                <StackLayout Grid.Row="3"
+                                    Orientation="Horizontal" Spacing="5">
+                                    <Label Text=" " FontSize="14"/>
+                                    <Label Text="{Binding Calificacion}"
+                                        Style="{StaticResource Caption}"/>
+                                </StackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
