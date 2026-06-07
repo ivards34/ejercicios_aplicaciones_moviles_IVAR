@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\pagemodels\\mainpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\pagemodels\\mainpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\ivard\\source\\repos\\bibliotecaapp\\bibliotecaapp\\views\\detallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D4ABDE5A-20EE-9A41-7499-30FE342D7C33}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\views\\detallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -66,19 +74,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "BibliotecaApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAD4v0QAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:18:21.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "MainPageModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\PageModels\\MainPageModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\PageModels\\MainPageModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\PageModels\\MainPageModel.cs",
+              "RelativeToolTip": "BibliotecaApp\\PageModels\\MainPageModel.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAcwK0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T00:18:17.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\AppShell.xaml.cs",
@@ -86,12 +115,11 @@
               "RelativeToolTip": "BibliotecaApp\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T23:55:30.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:55:30.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\AppShell.xaml",
@@ -99,12 +127,11 @@
               "RelativeToolTip": "BibliotecaApp\\AppShell.xaml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-25T23:54:08.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:54:08.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "LibroService.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Services\\LibroService.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Services\\LibroService.cs",
@@ -112,12 +139,11 @@
               "RelativeToolTip": "BibliotecaApp\\Services\\LibroService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T23:47:26.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:47:26.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DetalleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
@@ -125,12 +151,11 @@
               "RelativeToolTip": "BibliotecaApp\\ViewModels\\DetalleViewModel.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T23:33:08.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:33:08.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Models\\Libro.cs",
@@ -138,12 +163,11 @@
               "RelativeToolTip": "BibliotecaApp\\Models\\Libro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T23:31:44.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:31:44.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LibrosPage.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\LibrosPage.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\LibrosPage.xaml",
@@ -151,25 +175,23 @@
               "RelativeToolTip": "BibliotecaApp\\Views\\LibrosPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-25T23:58:47.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:58:47.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DetallePage.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\DetallePage.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\DetallePage.xaml",
               "ToolTip": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\DetallePage.xaml",
               "RelativeToolTip": "BibliotecaApp\\Views\\DetallePage.xaml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T00:01:38.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T00:01:38.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\HomeViewModel.cs",
@@ -177,12 +199,11 @@
               "RelativeToolTip": "BibliotecaApp\\ViewModels\\HomeViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T23:32:40.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T23:32:40.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PerfilPage.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\PerfilPage.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\PerfilPage.xaml",
@@ -190,12 +211,11 @@
               "RelativeToolTip": "BibliotecaApp\\Views\\PerfilPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T00:05:06.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T00:05:06.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FavoritosPage.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\FavoritosPage.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\FavoritosPage.xaml",
@@ -207,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "HomePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\HomePage.xaml.cs",
@@ -219,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "HomePage.xaml",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\Views\\HomePage.xaml",
               "RelativeDocumentMoniker": "BibliotecaApp\\Views\\HomePage.xaml",
@@ -231,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LibrosViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\LibrosViewModel.cs",
@@ -243,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "PerfilViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ivard\\source\\repos\\BibliotecaApp\\BibliotecaApp\\ViewModels\\PerfilViewModel.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\ViewModels\\PerfilViewModel.cs",

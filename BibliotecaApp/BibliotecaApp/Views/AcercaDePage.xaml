@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BibliotecaApp.Views.HomePage"
-             Title="Inicio">
+             x:Class="BibliotecaApp.Views.AcercaDePage"
+             Title="Acerca de">
     <VerticalStackLayout Padding="20" Spacing="20">
-        <Label Text="Bienvenido a Mi Biblioteca"
+        <Label Text="Acerca de"
                FontSize="24"
                FontAttributes="Bold"
                HorizontalOptions="Center"/>
-        <Label Text="Tu aplicación de gestión de libros"
+        <Label Text="Mi Biblioteca App"
+               FontSize="18"
+               HorizontalOptions="Center"/>
+        <Label Text="Versión 1.0"
                HorizontalOptions="Center"/>
     </VerticalStackLayout>
 </ContentPage>
