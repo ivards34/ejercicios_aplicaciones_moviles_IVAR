@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practico_n10.Pages.VibracionPage"
+             Title="Vibración y Portapapeles">
+    <StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        <Label Text="📳 Vibración y Portapapeles" FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Button Text="Vibrar (500ms)" Clicked="OnVibrarClicked"
+                BackgroundColor="#FF9800" TextColor="White" />
+        <Entry x:Name="txtCopiar" Placeholder="Texto para copiar..." />
+        <Button Text="Copiar al portapapeles" Clicked="OnCopiarClicked"
+                BackgroundColor="#512BD4" TextColor="White" />
+        <Label x:Name="lblEstado" FontSize="14" TextColor="Gray"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

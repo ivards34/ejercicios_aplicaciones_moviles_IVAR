@@ -1,0 +1,311 @@
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+Práctico 10: Características Nativas
+del Dispositivo
+Programación III - Aplicaciones Móviles con .NET
+MAUI
+Módulo 7 — Características Nativas
+Fecha de entrega: Jueves 11 de Junio (link del repo en Classroom)
+
+🎯 Objetivo
+Practicar el uso de funciones nativas del celular con ejercicios cortos
+e independientes. Cada ejercicio se enfoca en una característica
+puntual.
+
+📋 Ejercicios
+Ejercicio 1: Obtener mi ubicación GPS
+Crear una pantalla con un botón que al presionarlo muestre la latitud y
+longitud actual.
+XAML:
+<StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+<Label Text="📍 Mi Ubicación" FontSize="24" FontAttributes="Bold"
+HorizontalOptions="Center" />
+
+Página 1 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+<Button Text="Obtener Ubicación" Clicked="OnObtenerUbicacionClicked"
+BackgroundColor="#512BD4" TextColor="White" />
+<Label x:Name="lblLatitud" FontSize="16" HorizontalOptions="Center" />
+<Label x:Name="lblLongitud" FontSize="16" HorizontalOptions="Center" />
+<Label x:Name="lblEstado" FontSize="14" TextColor="Gray"
+HorizontalOptions="Center" />
+</StackLayout>
+
+Code-behind:
+private async void OnObtenerUbicacionClicked(object sender, EventArgs e)
+{
+try
+{
+// Pedir permiso
+var status = await
+Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
+if (status != PermissionStatus.Granted)
+status = await
+Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+if (status != PermissionStatus.Granted)
+{
+lblEstado.Text = "Permiso denegado";
+return;
+}
+// Obtener ubicación
+lblEstado.Text = "Buscando ubicación...";
+var location = await Geolocation.GetLocationAsync(
+new GeolocationRequest(GeolocationAccuracy.Medium));
+if (location != null)
+{
+lblLatitud.Text = $"Latitud: {location.Latitude:F6}";
+lblLongitud.Text = $"Longitud: {location.Longitude:F6}";
+lblEstado.Text = "✅ Ubicación obtenida";
+}
+}
+catch (Exception ex)
+{
+lblEstado.Text = $"Error: {ex.Message}";
+}
+}
+
+Resultado esperado: Al presionar el botón, aparecen las
+coordenadas del celular/emulador.
+
+Página 2 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+Ejercicio 2: Sacar una foto y mostrarla
+Crear una pantalla con un botón para sacar foto y un Image para
+mostrarla.
+XAML:
+<StackLayout Padding="20" Spacing="15">
+<Label Text="📷 Mi Foto" FontSize="24" FontAttributes="Bold"
+HorizontalOptions="Center" />
+<Image x:Name="imgFoto" HeightRequest="300"
+Aspect="AspectFit" BackgroundColor="#f0f0f0" />
+<Button Text="Sacar Foto" Clicked="OnSacarFotoClicked"
+BackgroundColor="#512BD4" TextColor="White" />
+<Button Text="Elegir de Galería" Clicked="OnElegirGaleriaClicked"
+BackgroundColor="#666" TextColor="White" />
+</StackLayout>
+
+Code-behind:
+private async void OnSacarFotoClicked(object sender, EventArgs e)
+{
+try
+{
+if (!MediaPicker.IsCaptureSupported)
+{
+await DisplayAlert("Error", "Este dispositivo no tiene cámara",
+"OK");
+return;
+}
+var photo = await MediaPicker.CapturePhotoAsync();
+if (photo != null)
+imgFoto.Source = ImageSource.FromFile(photo.FullPath);
+}
+catch (Exception ex)
+{
+await DisplayAlert("Error", ex.Message, "OK");
+}
+}
+private async void OnElegirGaleriaClicked(object sender, EventArgs e)
+{
+try
+{
+var photo = await MediaPicker.PickPhotoAsync();
+if (photo != null)
+imgFoto.Source = ImageSource.FromFile(photo.FullPath);
+
+Página 3 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+}
+catch (Exception ex)
+{
+await DisplayAlert("Error", ex.Message, "OK");
+}
+}
+
+Resultado esperado: Sacás una foto o elegís de la galería y se
+muestra en la pantalla.
+
+Ejercicio 3: Compartir un texto
+Crear una pantalla con un Entry para escribir un mensaje y un botón
+para compartirlo.
+XAML:
+<StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+<Label Text="📤 Compartir" FontSize="24" FontAttributes="Bold"
+HorizontalOptions="Center" />
+<Entry x:Name="txtMensaje" Placeholder="Escribí un mensaje para
+compartir..." />
+<Button Text="Compartir" Clicked="OnCompartirClicked"
+BackgroundColor="#512BD4" TextColor="White" />
+</StackLayout>
+
+Code-behind:
+private async void OnCompartirClicked(object sender, EventArgs e)
+{
+if (string.IsNullOrWhiteSpace(txtMensaje.Text))
+{
+await DisplayAlert("Error", "Escribí algo para compartir", "OK");
+return;
+}
+await Share.RequestAsync(new ShareTextRequest
+{
+Text = txtMensaje.Text,
+Title = "Compartir mensaje"
+});
+}
+
+Resultado esperado: Al presionar compartir, se abre el menú del
+sistema para enviar por WhatsApp, email, etc.
+
+Página 4 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+Ejercicio 4: Detectar conectividad
+Crear una pantalla que muestre si hay internet o no, y que se actualice
+automáticamente.
+XAML:
+<StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+<Label Text="📶 Conectividad" FontSize="24" FontAttributes="Bold"
+HorizontalOptions="Center" />
+<Frame x:Name="frameEstado" Padding="20" CornerRadius="10"
+HorizontalOptions="Center">
+<Label x:Name="lblConectividad" FontSize="18"
+HorizontalOptions="Center" />
+</Frame>
+<Button Text="Verificar Ahora" Clicked="OnVerificarClicked"
+BackgroundColor="#512BD4" TextColor="White" />
+</StackLayout>
+
+Code-behind:
+public ConectividadPage()
+{
+InitializeComponent();
+VerificarConectividad();
+// Escuchar cambios automáticamente
+Connectivity.ConnectivityChanged += (s, e) => VerificarConectividad();
+}
+private void VerificarConectividad()
+{
+if (Connectivity.Current.NetworkAccess == NetworkAccess.Internet)
+{
+lblConectividad.Text = "✅ Conectado a internet";
+frameEstado.BackgroundColor = Color.FromArgb("#E8F5E9");
+}
+else
+{
+lblConectividad.Text = "❌ Sin conexión";
+frameEstado.BackgroundColor = Color.FromArgb("#FFEBEE");
+}
+}
+private void OnVerificarClicked(object sender, EventArgs e)
+{
+VerificarConectividad();
+}
+
+Página 5 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+Resultado esperado: Muestra verde si hay internet, rojo si no. Si
+activás/desactivás el WiFi, se actualiza solo.
+
+Ejercicio 5: Vibrar y copiar al portapapeles
+Crear una pantalla con dos botones: uno que haga vibrar el celular y
+otro que copie un texto al portapapeles.
+XAML:
+<StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+<Label Text="📳 Vibración y Portapapeles" FontSize="20"
+FontAttributes="Bold"
+HorizontalOptions="Center" />
+<Button Text="Vibrar (500ms)" Clicked="OnVibrarClicked"
+BackgroundColor="#FF9800" TextColor="White" />
+<Entry x:Name="txtCopiar" Placeholder="Texto para copiar..." />
+<Button Text="Copiar al portapapeles" Clicked="OnCopiarClicked"
+BackgroundColor="#512BD4" TextColor="White" />
+<Label x:Name="lblEstado" FontSize="14" TextColor="Gray"
+HorizontalOptions="Center" />
+</StackLayout>
+
+Code-behind:
+private void OnVibrarClicked(object sender, EventArgs e)
+{
+try
+{
+Vibration.Vibrate(TimeSpan.FromMilliseconds(500));
+lblEstado.Text = "📳 ¡Vibró!";
+}
+catch (Exception ex)
+{
+lblEstado.Text = $"Error: {ex.Message}";
+}
+}
+private async void OnCopiarClicked(object sender, EventArgs e)
+{
+if (string.IsNullOrWhiteSpace(txtCopiar.Text))
+{
+await DisplayAlert("Error", "Escribí algo para copiar", "OK");
+return;
+}
+
+Página 6 de 7
+
+Programación III - Aplicaciones Móviles con .NET MAUI
+
+await Clipboard.SetTextAsync(txtCopiar.Text);
+lblEstado.Text = "📋 ¡Copiado al portapapeles!";
+}
+
+Resultado esperado: Un botón vibra el celular, el otro copia texto
+que después podés pegar en otra app.
+
+✅ Criterios de evaluación
+Ejercicio
+
+Puntos
+
+Ejercicio 1: Obtener ubicación GPS
+
+25
+
+Ejercicio 2: Sacar foto / galería
+
+25
+
+Ejercicio 3: Compartir texto
+
+20
+
+Ejercicio 4: Detectar conectividad
+
+15
+
+Ejercicio 5: Vibrar y portapapeles
+
+15
+
+Total
+
+100
+
+💡 Tips
+• Cada ejercicio puede ser una página separada con navegación, o
+todo en una sola app con tabs
+• En el emulador: la cámara simula una imagen, el GPS usa una
+ubicación ficticia, la vibración no se siente pero no da error
+• Si un permiso falla, mostrá un mensaje claro al usuario
+• No te preocupes por el diseño perfecto — lo importante es que
+funcione
+
+📦 Entrega
+• Subir el proyecto a un repositorio de GitHub
+• Pegar el link del repositorio en la tarea del Classroom
+• Agregarme como colaboradora en el repositorio
+
+Página 7 de 7
+
+

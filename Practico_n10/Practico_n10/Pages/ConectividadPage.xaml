@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practico_n10.Pages.ConectividadPage"
+             Title="Conectividad">
+    <StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        <Label Text="📶 Conectividad" FontSize="24" FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Frame x:Name="frameEstado" Padding="20" CornerRadius="10"
+               HorizontalOptions="Center">
+            <Label x:Name="lblConectividad" FontSize="18"
+                   HorizontalOptions="Center" />
+        </Frame>
+        <Button Text="Verificar Ahora" Clicked="OnVerificarClicked"
+                BackgroundColor="#512BD4" TextColor="White" />
+    </StackLayout>
+</ContentPage>

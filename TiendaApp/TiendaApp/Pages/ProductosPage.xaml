@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TiendaApp.ViewModels"
+             xmlns:models="clr-namespace:TiendaApp.Models"
+             x:Class="TiendaApp.Pages.ProductosPage"
+             x:DataType="vm:ProductosViewModel"
+             Title="Productos">
+
+    <Grid RowDefinitions="Auto,*">
+        <SearchBar Placeholder="Buscar productos..." Text="{Binding TerminoBusqueda}" SearchCommand="{Binding BuscarCommand}" Margin="10" />
+
+        <RefreshView Grid.Row="1" IsRefreshing="{Binding EstaCargando}" Command="{Binding CargarCommand}">
+            <CollectionView ItemsSource="{Binding Productos}" SelectionMode="None" Margin="10,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Producto">
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Eliminar" BackgroundColor="Red" Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductosViewModel}}, Path=EliminarCommand}" CommandParameter="{Binding .}"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <Frame Padding="10" Margin="0,5">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductosViewModel}}, Path=IrADetalleCommand}" CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+
+                                <Grid ColumnSpacing="15">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding Imagen}" Aspect="AspectFill" WidthRequest="80" HeightRequest="80"/>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Precio, StringFormat='${0:F2}'}" FontSize="16" TextColor="Green"/>
+                                    </StackLayout>
+
+                                    <Label Grid.Column="2" Text="{Binding Descripcion}" VerticalOptions="Center"/>
+                                </Grid>
+                            </Frame>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <Button Text="Agregar" Command="{Binding AgregarCommand}" HorizontalOptions="End" VerticalOptions="End" Margin="20" />
+    </Grid>
+</ContentPage>

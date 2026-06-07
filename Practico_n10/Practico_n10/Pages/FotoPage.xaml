@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practico_n10.Pages.FotoPage"
+             Title="Mi Foto">
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="📷 Mi Foto" FontSize="24" FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Image x:Name="imgFoto" HeightRequest="300"
+               Aspect="AspectFit" BackgroundColor="#f0f0f0" />
+        <Button Text="Sacar Foto" Clicked="OnSacarFotoClicked"
+                BackgroundColor="#512BD4" TextColor="White" />
+        <Button Text="Elegir de Galería" Clicked="OnElegirGaleriaClicked"
+                BackgroundColor="#666" TextColor="White" />
+    </StackLayout>
+</ContentPage>

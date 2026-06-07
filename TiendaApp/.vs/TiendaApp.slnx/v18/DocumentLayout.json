@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\services\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\services\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\viewmodels\\productosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\viewmodels\\productosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\pages\\productospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\pages\\productospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\pages\\productospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\pages\\productospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|c:\\users\\ivard\\onedrive\\desktop\\tiendaapp\\tiendaapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E9C8EB7-427D-7542-FE15-F2D90BE8DECE}|TiendaApp\\TiendaApp.csproj|solutionrelative:tiendaapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "TiendaApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\AppShell.xaml",
+              "RelativeToolTip": "TiendaApp\\AppShell.xaml",
+              "ViewState": "AgIAABYAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-06T03:21:07.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductosPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Pages\\ProductosPage.xaml",
+              "RelativeDocumentMoniker": "TiendaApp\\Pages\\ProductosPage.xaml",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Pages\\ProductosPage.xaml",
+              "RelativeToolTip": "TiendaApp\\Pages\\ProductosPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-06T03:20:56.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\ViewModels\\ProductosViewModel.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\ViewModels\\ProductosViewModel.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\ViewModels\\ProductosViewModel.cs",
+              "RelativeToolTip": "TiendaApp\\ViewModels\\ProductosViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:20:50.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Services\\ProductoService.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\Services\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Services\\ProductoService.cs",
+              "RelativeToolTip": "TiendaApp\\Services\\ProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:20:46.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Services\\IProductoService.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\Services\\IProductoService.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Services\\IProductoService.cs",
+              "RelativeToolTip": "TiendaApp\\Services\\IProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:20:42.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Models\\Producto.cs",
+              "RelativeToolTip": "TiendaApp\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:20:39.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\MauiProgram.cs",
+              "RelativeToolTip": "TiendaApp\\MauiProgram.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:21:02.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductosPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Pages\\ProductosPage.xaml.cs",
+              "RelativeDocumentMoniker": "TiendaApp\\Pages\\ProductosPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ivard\\OneDrive\\Desktop\\TiendaApp\\TiendaApp\\Pages\\ProductosPage.xaml.cs",
+              "RelativeToolTip": "TiendaApp\\Pages\\ProductosPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T03:20:59.063Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

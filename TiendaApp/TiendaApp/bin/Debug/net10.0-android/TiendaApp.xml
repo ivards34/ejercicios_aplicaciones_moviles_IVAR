@@ -1,0 +1,1002 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TiendaApp</name>
+    </assembly>
+    <members>
+        <member name="T:TiendaApp.Data.CategoryRepository">
+            <summary>
+            Repository class for managing categories in the database.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.#ctor(Microsoft.Extensions.Logging.ILogger{TiendaApp.Data.CategoryRepository})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiendaApp.Data.CategoryRepository"/> class.
+            </summary>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.Init">
+            <summary>
+            Initializes the database connection and creates the Category table if it does not exist.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.ListAsync">
+            <summary>
+            Retrieves a list of all categories from the database.
+            </summary>
+            <returns>A list of <see cref="T:TiendaApp.Models.Category"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.GetAsync(System.Int32)">
+            <summary>
+            Retrieves a specific category by its ID.
+            </summary>
+            <param name="id">The ID of the category.</param>
+            <returns>A <see cref="T:TiendaApp.Models.Category"/> object if found; otherwise, null.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.SaveItemAsync(TiendaApp.Models.Category)">
+            <summary>
+            Saves a category to the database. If the category ID is 0, a new category is created; otherwise, the existing category is updated.
+            </summary>
+            <param name="item">The category to save.</param>
+            <returns>The ID of the saved category.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.DeleteItemAsync(TiendaApp.Models.Category)">
+            <summary>
+            Deletes a category from the database.
+            </summary>
+            <param name="item">The category to delete.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.CategoryRepository.DropTableAsync">
+            <summary>
+            Drops the Category table from the database.
+            </summary>
+        </member>
+        <member name="T:TiendaApp.Data.ProjectRepository">
+            <summary>
+            Repository class for managing projects in the database.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.#ctor(TiendaApp.Data.TaskRepository,TiendaApp.Data.TagRepository,Microsoft.Extensions.Logging.ILogger{TiendaApp.Data.ProjectRepository})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiendaApp.Data.ProjectRepository"/> class.
+            </summary>
+            <param name="taskRepository">The task repository instance.</param>
+            <param name="tagRepository">The tag repository instance.</param>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.Init">
+            <summary>
+            Initializes the database connection and creates the Project table if it does not exist.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.ListAsync">
+            <summary>
+            Retrieves a list of all projects from the database.
+            </summary>
+            <returns>A list of <see cref="T:TiendaApp.Models.Project"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.GetAsync(System.Int32)">
+            <summary>
+            Retrieves a specific project by its ID.
+            </summary>
+            <param name="id">The ID of the project.</param>
+            <returns>A <see cref="T:TiendaApp.Models.Project"/> object if found; otherwise, null.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.SaveItemAsync(TiendaApp.Models.Project)">
+            <summary>
+            Saves a project to the database. If the project ID is 0, a new project is created; otherwise, the existing project is updated.
+            </summary>
+            <param name="item">The project to save.</param>
+            <returns>The ID of the saved project.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.DeleteItemAsync(TiendaApp.Models.Project)">
+            <summary>
+            Deletes a project from the database.
+            </summary>
+            <param name="item">The project to delete.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.ProjectRepository.DropTableAsync">
+            <summary>
+            Drops the Project table from the database.
+            </summary>
+        </member>
+        <member name="T:TiendaApp.Data.TagRepository">
+            <summary>
+            Repository class for managing tags in the database.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.#ctor(Microsoft.Extensions.Logging.ILogger{TiendaApp.Data.TagRepository})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiendaApp.Data.TagRepository"/> class.
+            </summary>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.Init">
+            <summary>
+            Initializes the database connection and creates the Tag and ProjectsTags tables if they do not exist.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.ListAsync">
+            <summary>
+            Retrieves a list of all tags from the database.
+            </summary>
+            <returns>A list of <see cref="T:TiendaApp.Models.Tag"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.ListAsync(System.Int32)">
+            <summary>
+            Retrieves a list of tags associated with a specific project.
+            </summary>
+            <param name="projectID">The ID of the project.</param>
+            <returns>A list of <see cref="T:TiendaApp.Models.Tag"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.GetAsync(System.Int32)">
+            <summary>
+            Retrieves a specific tag by its ID.
+            </summary>
+            <param name="id">The ID of the tag.</param>
+            <returns>A <see cref="T:TiendaApp.Models.Tag"/> object if found; otherwise, null.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.SaveItemAsync(TiendaApp.Models.Tag)">
+            <summary>
+            Saves a tag to the database. If the tag ID is 0, a new tag is created; otherwise, the existing tag is updated.
+            </summary>
+            <param name="item">The tag to save.</param>
+            <returns>The ID of the saved tag.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.SaveItemAsync(TiendaApp.Models.Tag,System.Int32)">
+            <summary>
+            Saves a tag to the database and associates it with a specific project.
+            </summary>
+            <param name="item">The tag to save.</param>
+            <param name="projectID">The ID of the project.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.IsAssociated(TiendaApp.Models.Tag,System.Int32)">
+            <summary>
+            Checks if a tag is already associated with a specific project.
+            </summary>
+            <param name="item">The tag to save.</param>
+            <param name="projectID">The ID of the project.</param>
+            <returns>If tag is already associated with this project</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.DeleteItemAsync(TiendaApp.Models.Tag)">
+            <summary>
+            Deletes a tag from the database.
+            </summary>
+            <param name="item">The tag to delete.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.DeleteItemAsync(TiendaApp.Models.Tag,System.Int32)">
+            <summary>
+            Deletes a tag from a specific project in the database.
+            </summary>
+            <param name="item">The tag to delete.</param>
+            <param name="projectID">The ID of the project.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TagRepository.DropTableAsync">
+            <summary>
+            Drops the Tag and ProjectsTags tables from the database.
+            </summary>
+        </member>
+        <member name="T:TiendaApp.Data.TaskRepository">
+            <summary>
+            Repository class for managing tasks in the database.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.#ctor(Microsoft.Extensions.Logging.ILogger{TiendaApp.Data.TaskRepository})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiendaApp.Data.TaskRepository"/> class.
+            </summary>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.Init">
+            <summary>
+            Initializes the database connection and creates the Task table if it does not exist.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.ListAsync">
+            <summary>
+            Retrieves a list of all tasks from the database.
+            </summary>
+            <returns>A list of <see cref="T:TiendaApp.Models.ProjectTask"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.ListAsync(System.Int32)">
+            <summary>
+            Retrieves a list of tasks associated with a specific project.
+            </summary>
+            <param name="projectId">The ID of the project.</param>
+            <returns>A list of <see cref="T:TiendaApp.Models.ProjectTask"/> objects.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.GetAsync(System.Int32)">
+            <summary>
+            Retrieves a specific task by its ID.
+            </summary>
+            <param name="id">The ID of the task.</param>
+            <returns>A <see cref="T:TiendaApp.Models.ProjectTask"/> object if found; otherwise, null.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.SaveItemAsync(TiendaApp.Models.ProjectTask)">
+            <summary>
+            Saves a task to the database. If the task ID is 0, a new task is created; otherwise, the existing task is updated.
+            </summary>
+            <param name="item">The task to save.</param>
+            <returns>The ID of the saved task.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.DeleteItemAsync(TiendaApp.Models.ProjectTask)">
+            <summary>
+            Deletes a task from the database.
+            </summary>
+            <param name="item">The task to delete.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:TiendaApp.Data.TaskRepository.DropTableAsync">
+            <summary>
+            Drops the Task table from the database.
+            </summary>
+        </member>
+        <member name="T:TiendaApp.PageModels.MainPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.TodoCategoryData">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._todoCategoryData"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.TodoCategoryColors">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._todoCategoryColors"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.Tasks">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._tasks"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.Projects">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._projects"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.IsBusy">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._isBusy"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.IsRefreshing">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._isRefreshing"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.Today">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel._today"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.SelectedProject">
+            <inheritdoc cref="F:TiendaApp.PageModels.MainPageModel.selectedProject"/>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.Refresh"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.navigatedToCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.NavigatedToCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.NavigatedToCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.NavigatedTo"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.navigatedFromCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.NavigatedFromCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.NavigatedFromCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.NavigatedFrom"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.appearingCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.AppearingCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.AppearingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.Appearing"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.taskCompletedCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.TaskCompletedCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.TaskCompletedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.TaskCompleted(TiendaApp.Models.ProjectTask)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.addTaskCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.AddTaskCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.AddTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.AddTask"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.navigateToProjectCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.NavigateToProjectCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.NavigateToProjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.NavigateToProject(TiendaApp.Models.Project)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.navigateToTaskCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.NavigateToTaskCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.NavigateToTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.NavigateToTask(TiendaApp.Models.ProjectTask)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.MainPageModel.cleanTasksCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.MainPageModel.CleanTasksCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.MainPageModel.CleanTasksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.MainPageModel.CleanTasks"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.PageModels.ManageMetaPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.Categories">
+            <inheritdoc cref="F:TiendaApp.PageModels.ManageMetaPageModel._categories"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.Tags">
+            <inheritdoc cref="F:TiendaApp.PageModels.ManageMetaPageModel._tags"/>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.appearingCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.AppearingCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.AppearingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.Appearing"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.saveCategoriesCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.SaveCategoriesCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.SaveCategoriesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.SaveCategories"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.deleteCategoryCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.DeleteCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.DeleteCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.DeleteCategory(TiendaApp.Models.Category)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.addCategoryCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.AddCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.AddCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.AddCategory"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.saveTagsCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.SaveTagsCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.SaveTagsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.SaveTags"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.deleteTagCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.DeleteTagCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.DeleteTagCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.DeleteTag(TiendaApp.Models.Tag)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.addTagCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.AddTagCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.AddTagCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.AddTag"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ManageMetaPageModel.resetCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ManageMetaPageModel.ResetCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ManageMetaPageModel.ResetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ManageMetaPageModel.Reset"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.PageModels.ProjectDetailPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Name">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._name"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Description">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._description"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Tasks">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._tasks"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Categories">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._categories"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Category">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._category"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.CategoryIndex">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._categoryIndex"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.AllTags">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._allTags"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Icon">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._icon"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.IsBusy">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._isBusy"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.Icons">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectDetailPageModel._icons"/>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.taskCompletedCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.TaskCompletedCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.TaskCompletedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.TaskCompleted(TiendaApp.Models.ProjectTask)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.saveCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.Save"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.addTaskCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.AddTaskCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.AddTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.AddTask"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.deleteCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.Delete"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.navigateToTaskCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.NavigateToTaskCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.NavigateToTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.NavigateToTask(TiendaApp.Models.ProjectTask)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.toggleTagCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.ToggleTagCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.ToggleTagCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.ToggleTag(TiendaApp.Models.Tag)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.iconSelectedCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.IconSelectedCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.IconSelectedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.IconSelected(TiendaApp.Models.IconData)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.cleanTasksCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.CleanTasksCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.CleanTasksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.CleanTasks"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectDetailPageModel.selectionChangedCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectDetailPageModel.SelectionChangedCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectDetailPageModel.SelectionChangedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectDetailPageModel.SelectionChanged(System.Object)"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.PageModels.ProjectListPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectListPageModel.Projects">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectListPageModel._projects"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectListPageModel.SelectedProject">
+            <inheritdoc cref="F:TiendaApp.PageModels.ProjectListPageModel.selectedProject"/>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectListPageModel.appearingCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectListPageModel.AppearingCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectListPageModel.AppearingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectListPageModel.Appearing"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectListPageModel.navigateToProjectCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectListPageModel.NavigateToProjectCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectListPageModel.NavigateToProjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectListPageModel.NavigateToProject(TiendaApp.Models.Project)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.ProjectListPageModel.addProjectCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.ProjectListPageModel.AddProjectCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.ProjectListPageModel.AddProjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.ProjectListPageModel.AddProject"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.PageModels.TaskDetailPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.Title">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._title"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.IsCompleted">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._isCompleted"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.Projects">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._projects"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.Project">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._project"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.SelectedProjectIndex">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._selectedProjectIndex"/>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.IsExistingProject">
+            <inheritdoc cref="F:TiendaApp.PageModels.TaskDetailPageModel._isExistingProject"/>
+        </member>
+        <member name="F:TiendaApp.PageModels.TaskDetailPageModel.saveCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.TaskDetailPageModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.TaskDetailPageModel.Save"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.PageModels.TaskDetailPageModel.deleteCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.PageModels.TaskDetailPageModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.PageModels.TaskDetailPageModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.PageModels.TaskDetailPageModel.Delete"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.Services.IErrorHandler">
+            <summary>
+            Error Handler Service.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Services.IErrorHandler.HandleError(System.Exception)">
+            <summary>
+            Handle error in UI.
+            </summary>
+            <param name="ex">Exception being thrown.</param>
+        </member>
+        <member name="T:TiendaApp.Services.ModalErrorHandler">
+            <summary>
+            Modal Error Handler.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Services.ModalErrorHandler.HandleError(System.Exception)">
+            <summary>
+            Handle error in UI.
+            </summary>
+            <param name="ex">Exception.</param>
+        </member>
+        <member name="T:TiendaApp.Utilities.ProjectExtensions">
+            <summary>
+            Project Model Extensions
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Utilities.ProjectExtensions.IsNullOrNew(TiendaApp.Models.Project)">
+            <summary>
+            Check if the project is null or new.
+            </summary>
+            <param name="project"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TiendaApp.Utilities.TaskUtilities">
+            <summary>
+            Task Utilities.
+            </summary>
+        </member>
+        <member name="M:TiendaApp.Utilities.TaskUtilities.FireAndForgetSafeAsync(System.Threading.Tasks.Task,TiendaApp.Services.IErrorHandler)">
+            <summary>
+            Fire and Forget Safe Async.
+            </summary>
+            <param name="task">Task to Fire and Forget.</param>
+            <param name="handler">Error Handler.</param>
+        </member>
+        <member name="T:TiendaApp.ViewModels.ProductosViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.EstaCargando">
+            <inheritdoc cref="F:TiendaApp.ViewModels.ProductosViewModel.estaCargando"/>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.TerminoBusqueda">
+            <inheritdoc cref="F:TiendaApp.ViewModels.ProductosViewModel.terminoBusqueda"/>
+        </member>
+        <member name="F:TiendaApp.ViewModels.ProductosViewModel.cargarCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.ViewModels.ProductosViewModel.CargarCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.CargarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.ViewModels.ProductosViewModel.Cargar"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.ViewModels.ProductosViewModel.agregarCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.ViewModels.ProductosViewModel.AgregarCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.AgregarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.ViewModels.ProductosViewModel.Agregar"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.ViewModels.ProductosViewModel.eliminarCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.ViewModels.ProductosViewModel.EliminarCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.EliminarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.ViewModels.ProductosViewModel.Eliminar(TiendaApp.Models.Producto)"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.ViewModels.ProductosViewModel.buscarCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.ViewModels.ProductosViewModel.BuscarCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.BuscarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TiendaApp.ViewModels.ProductosViewModel.Buscar"/>.</summary>
+        </member>
+        <member name="F:TiendaApp.ViewModels.ProductosViewModel.irADetalleCommand">
+            <summary>The backing field for <see cref="P:TiendaApp.ViewModels.ProductosViewModel.IrADetalleCommand"/>.</summary>
+        </member>
+        <member name="P:TiendaApp.ViewModels.ProductosViewModel.IrADetalleCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:TiendaApp.ViewModels.ProductosViewModel.IrADetalle(TiendaApp.Models.Producto)"/>.</summary>
+        </member>
+        <member name="T:TiendaApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.ListProject">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.ListProjectTask">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.ListTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Category">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Project">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.ProjectsJson">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.ProjectTask">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Tag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:JsonContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:JsonContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:JsonContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:JsonContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TodoCategoryData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TodoCategoryData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TodoCategoryColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TodoCategoryColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Today">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Today" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Categories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Categories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tags" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Category">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Category" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryIndex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryIndex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AllTags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AllTags" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Icons">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Icons" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsCompleted">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsCompleted" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Project">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Project" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedProjectIndex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedProjectIndex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsExistingProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsExistingProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EstaCargando">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EstaCargando" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TerminoBusqueda">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TerminoBusqueda" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TodoCategoryData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TodoCategoryData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TodoCategoryColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TodoCategoryColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Today">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Today" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Categories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Categories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tags" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Category">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Category" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryIndex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryIndex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AllTags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AllTags" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Icons">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Icons" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsCompleted">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsCompleted" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Project">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Project" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedProjectIndex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedProjectIndex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsExistingProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsExistingProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EstaCargando">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EstaCargando" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TerminoBusqueda">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TerminoBusqueda" generated properties.</summary>
+        </member>
+    </members>
+</doc>

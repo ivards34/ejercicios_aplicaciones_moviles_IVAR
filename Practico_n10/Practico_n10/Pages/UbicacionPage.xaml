@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practico_n10.Pages.UbicacionPage"
+             Title="Mi Ubicación">
+    <StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        <Label Text="📍 Mi Ubicación" FontSize="24" FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Button Text="Obtener Ubicación" Clicked="OnObtenerUbicacionClicked"
+                BackgroundColor="#512BD4" TextColor="White" />
+        <Label x:Name="lblLatitud" FontSize="16" HorizontalOptions="Center" />
+        <Label x:Name="lblLongitud" FontSize="16" HorizontalOptions="Center" />
+        <Label x:Name="lblEstado" FontSize="14" TextColor="Gray"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
